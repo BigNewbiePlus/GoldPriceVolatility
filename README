@@ -1,0 +1,14 @@
+#贵金属价格波动资讯筛选
+
+各目录作用
+===============================================
+data : 数据，包含经济资讯数据和预处理数据
+extract_organization：提取组织机构、人名、机构名，使用命名实体ner技术，使用stanford—ner包
+mark_data: 数据标记，等同于rule_based前身
+paper: 常见的一些论文
+rule_based: 最终采用的策略，基于规则的算法
+svm_votes_unsample_v1.2：使用svm算法+投票+无采样算法
+voting_multi_v1.3: 投票+多种分类器算法
+voting_svm_unbalanced_v1.1：投票+svm+不均衡学习(效果最好, 词向量后的尝试，标记版本2)
+word_freq: 基于词频(第一种尝试方法)
+word_vector_svm_v1.0: 基于词向量(对词频改进，版本1) 
