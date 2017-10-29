@@ -1,0 +1,1 @@
+python newsflash_SVM.py -use_stopwords True -use_chi2 True  -dicfile dic2.txt -chi2_rate 0.6 -local_fun one -global_fun one -recreate_dic True -ctl_num 500 -flag multitest -kernel linear -modelname svm1.model -modelnumber 10 -traindatarate 0.9 -test_number 10 

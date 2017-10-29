@@ -1,0 +1,28 @@
+10轮+20个linear+SVC， 训练VS测试 = 0.9vs0.1
+ train classifier 20RESULT
+             precision    recall  f1-score   support
+
+          0       0.96      0.89      0.92      1450
+          1       0.90      0.96      0.93      1450
+
+avg / total       0.93      0.92      0.92      2900
+
+10轮+20个rbf + SVC
+ train classifier 20RESULT
+             precision    recall  f1-score   support
+
+          0       0.94      0.77      0.85      1450
+          1       0.81      0.95      0.87      1450
+
+avg / total       0.88      0.86      0.86      2900
+
+10轮+20个linear+SVC， 训练VS测试 = 0.8vs0.2
+             precision    recall  f1-score   support
+
+          0       0.95      0.90      0.92      2910
+          1       0.90      0.96      0.93      2910
+
+avg / total       0.93      0.93      0.93      5820
+
+
+
