@@ -11,17 +11,18 @@
 	
 算法描述：
 	输入: 文件列表：  pos_files = ['keywords_EVT.txt', 'keywords_GOV.txt', 'keywords_IDX.txt', 'keywords_VIP.txt', 'keywords_POS.txt']
-		  	 neg_files = ['keywords_BLK.txt', 'keywords_ORG.txt', 'keywords_PER.txt', 'keywords_GPE.txt', 'keywords_NEG.txt']
-                         pos_mixed_files = ['mixed_keywords_POS.txt']
-			 neg_mixed_files = ['mixed_keywords_NEG.txt']
+		  	          neg_files = ['keywords_BLK.txt', 'keywords_ORG.txt', 'keywords_PER.txt', 'keywords_GPE.txt', 'keywords_NEG.txt']
+                      pos_mixed_files = ['mixed_keywords_POS.txt']
+			          neg_mixed_files = ['mixed_keywords_NEG.txt']
 	      待标记的资讯(正样例和负样例)
+
 	输出：pos_news, neg_news
 	
 	Begin:
 	读取 pos_files 所有文件，添加关键字到pos_keys
 	读取 neg_files 所有文件，添加关键字到neg_keys
-	读取 pos_files 所有文件，添加关键字到pos_keys
-	读取 neg_files 所有文件，添加关键字到neg_keys
+	读取 pos_mixed_files 所有文件，添加关键字到pos_mixed_keys
+	读取 neg_mixed_files 所有文件，添加关键字到neg_mixed_keys
 	
 	读取unlabel_file中所有文件资讯，记为news
 	对每条new:

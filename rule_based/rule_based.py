@@ -60,13 +60,13 @@ def read_keywords_files(keywords_files):
 
 
 def mark_news_based_rule(one_news):
-	# 输入：一条新闻资讯
-	# 输出：正样例输出True, 否则False
-	if contain_key(one_news, neg_keys): 
-       return False
+    # 输入：一条新闻资讯
+    # 输出：正样例输出True, 否则False
+    if contain_key(one_news, neg_keys): 
+        return False
     elif contain_mixed_key(line, pos_mixed_keys):
         return True
-	elif contain_mixed_key(line, neg_mixed_keys):
+    elif contain_mixed_key(line, neg_mixed_keys):
         return False
     elif contain_key(line, pos_keys):
         return False
